@@ -1,12 +1,15 @@
 public class Empleado extends Persona {
+    // Atributos
     private int idEmpleado;
     private double sueldo;
     private static int contadorEmpleados;
 
+    // Constructor vacío
     public Empleado() {
         this.idEmpleado = ++contadorEmpleados;
     }
 
+    // Constructor personalizado
     public Empleado(String nombre, char genero, int edad, String direccion, double sueldo) {
         super(nombre, genero, edad, direccion);
         this.idEmpleado = ++contadorEmpleados;
@@ -34,5 +37,4 @@ public class Empleado extends Persona {
         return super.toString() +
                 " Empleado [idEmpleado=" + idEmpleado + ", sueldo=" + sueldo + "]";
     }
-
 }

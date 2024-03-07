@@ -1,12 +1,12 @@
 import java.time.LocalDate;
 
-public class Cliente {
+public class Cliente extends Persona {
     private int idCliente;
     private LocalDate fechaRegistro;
     private boolean vip;
     private static int contadorClientes;
 
-    public Cliente(boolean vip, LocalDate fechaRegistro) {
+    public Cliente(LocalDate fechaRegistro, boolean vip) {
         this.idCliente = ++contadorClientes;
         this.fechaRegistro = fechaRegistro;
         this.vip = vip;
@@ -41,5 +41,4 @@ public class Cliente {
         return super.toString() +
                 " Cliente [idCliente=" + idCliente + ", fechaRegistro=" + fechaRegistro + ", vip=" + vip + "]";
     }
-
 }

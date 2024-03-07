@@ -1,15 +1,15 @@
 public class Persona {
-    // atrivutos
+    // atributos
     private String nombre;
     private char genero;
     private int edad;
     private String direccion;
 
-    // contructor vacio
+    // constructor vacío
     public Persona() {
     }
 
-    // contructor completo
+    // constructor completo
     public Persona(String nombre, char genero, int edad, String direccion) {
         this.nombre = nombre;
         this.genero = genero;
@@ -53,5 +53,4 @@ public class Persona {
     public String toString() {
         return "Persona [nombre=" + nombre + ", genero=" + genero + ", edad=" + edad + ", direccion=" + direccion + "]";
     }
-
 }
